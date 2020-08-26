@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Instafeed</title>
+	<style type="text/css">
+		a img{ 
+			width: 24%;
+			margin-left: 2px;
+			margin-right: 2px;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="text-align: center">Instagram Feed</h1>
+    <div id="instafeed-container"></div>
+
+	<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+	<script type="text/javascript">
+	var userFeed = new Instafeed({
+		get: '325387825485770',
+		target: "instafeed-container",
+    	resolution: 'low_resolution',
+		accessToken: 'IGQVJVdUZAHWGlmNWJSU3Vxbkpmbm5wc015aUowWTAyU0kyTGJoa3gyXzFyVVlVY01qWk5RTGR2cEwyMElwd0lpZADBqcnZABeWdKVnFfalo0SjJFd2lPc19qREZAaVTZAabUViRTBoMGVDYnRFdTh5cHdJMwZDZD'
+	});
+	userFeed.run();
+	</script>
+</body>
+</html>
